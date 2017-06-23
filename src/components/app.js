@@ -1,14 +1,19 @@
+
 import React from 'react';
 import CreateTodo from './create-todo';
 import TodosList from './todos-list';
 
 const todos = [
     {
-	task: 'make React tutorial',
+	task: 'Move the Sofa to the middle of the living room',
 	isCompleted: false
     },
     {
-	task: 'eat dinner',
+	task: 'Call Nenelly for house decoration',
+	isCompleted: true
+    },
+    {
+	task: 'Feed the Parrot before going to work',
 	isCompleted: true
     }
 ];
@@ -25,7 +30,7 @@ export default class App extends React.Component {
     render() {
         return (
 		<div>
-                <h1>React ToDos App</h1>
+                <h3 className="ui teal header">New</h3>
                 <CreateTodo todos={this.state.todos} createTask={this.createTask.bind(this)} />
                 <TodosList
             todos={this.state.todos}

@@ -17,11 +17,15 @@ export default class TodosList extends React.Component {
 
     render() {
         return (
-            <form onSubmit={this.handleCreate.bind(this)}>
+		<form onSubmit={this.handleCreate.bind(this)}>
+		<div className="ui large fluid action input">
                 <input type="text" placeholder="What do I need to do?" ref="createInput" />
-                <button>Create</button>
+		<button className="ui red button">Create</button>
+		</div>
+		<div className="ui hidden divider"></div>
                 {this.renderError()}
             </form>
+		
         );
     }
 
