@@ -5,9 +5,9 @@
 
 <a href="http://react-todo.herokuapp.com/" target="_blank">http://react-todos.herokuapp.com/</a>
 
-![](http://imgur.com/XhFWA8w?raw=true)
-![](http://imgur.com/a/5oxCK?raw=true)
-![](http://imgur.com/a/JgqQT?raw=true)
+![screenshot](http://imgur.com/XhFWA8w)
+![screenshot](http://imgur.com/a/5oxCK)
+![screenshot](http://imgur.com/a/JgqQT)
 
 ## Usage
 a. `git clone the repo.
