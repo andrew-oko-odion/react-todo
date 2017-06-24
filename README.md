@@ -8,6 +8,7 @@
 ![screenshot](http://imgur.com/XhFWA8w)
 ![screenshot](http://imgur.com/a/5oxCK)
 ![screenshot](http://imgur.com/a/JgqQT)
+![screenshot](http://imgur.com/lxy3Nyc)
 
 ## Usage
 a. `git clone the repo.
