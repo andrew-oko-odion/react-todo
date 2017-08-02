@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
     "scripts": {
-	"start": "./node_modules/webpack-dev-server/webpack-dev-server.js"
+	"build": "NODE_ENV=production webpack --config ./webpack.config.js --progress --colors",
+	"start": "node ./src/app.js"
     },
   "keywords": [],
   "author": "Michael Cheng <cheng.c.mike@gmail.com> (http://michaelcheng.io)",
