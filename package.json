@@ -4,8 +4,7 @@
   "description": "",
   "main": "index.js",
     "scripts": {
-	"start": "node ./server.js",
-	"heroku-postbuild": "webpack -p --config ./webpack.config.js --progress"
+	"start": "webpack-dev-server"
     },
   "keywords": [],
   "author": "Michael Cheng <cheng.c.mike@gmail.com> (http://michaelcheng.io)",
