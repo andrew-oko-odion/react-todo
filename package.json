@@ -3,9 +3,9 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {
-    "start": "node server"
-  },
+    "scripts": {
+	"start": "node ./node_modules/webpack-dev-server/bin/webpack-dev-server.js"
+    },
   "keywords": [],
   "author": "Michael Cheng <cheng.c.mike@gmail.com> (http://michaelcheng.io)",
   "license": "ISC",
@@ -31,6 +31,6 @@
     "webpack-dev-server": "^1.16.5"
   },
   "engines": {
-    "node": "5.5.0"
+    "node": "7.8.0"
   }
 }

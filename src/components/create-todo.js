@@ -1,37 +1,32 @@
 import React from 'react';
 
-export default class TodosList extends React.Component {
+class TodosList extends React.Component {
     constructor(props) {
         super(props);
-
-        this.state = {
-            error: null
-        };
+        this.state = { error: null };
     }
-
+    
     renderError() {
         if (!this.state.error) { return null; }
-
-        return <div style={{ color: 'red' }}>{this.state.error}</div>;
+        return <div style={ { color: 'red' } }> {this.state.error}</div>;
     }
 
     render() {
         return (
-		<form onSubmit={this.handleCreate.bind(this)}>
+	    <form onSubmit={this.handleCreate.bind(this)}>
 		<div className="ui large fluid action input">
-                <input type="text" placeholder="What do I need to do?" ref="createInput" />
-		<button className="ui red button">Create</button>
+                    <input type="text" placeholder="What do I need to do?" ref="createInput" />
+		    <button className="ui red button">Create</button>
 		</div>
 		<div className="ui hidden divider"></div>
                 {this.renderError()}
             </form>
-		
+	    
         );
     }
 
     handleCreate(event) {
         event.preventDefault();
-
         const createInput = this.refs.createInput;
         const task = createInput.value;
         const validateInput = this.validateInput(task);
@@ -40,7 +35,6 @@ export default class TodosList extends React.Component {
             this.setState({ error: validateInput });
             return;
         }
-
         this.setState({ error: null });
         this.props.createTask(task);
         this.refs.createInput.value = '';
@@ -56,3 +50,5 @@ export default class TodosList extends React.Component {
         }
     }
 }
+
+export default  TodosList; 

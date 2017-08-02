@@ -1,4 +1,3 @@
-
 import _ from 'lodash';
 import React from 'react';
 import TodosListItem from './todos-list-item';
@@ -13,9 +12,9 @@ export default class TodosList extends React.Component {
     render() {
         return (
 	    <table className="ui very padded table">
-            <tbody>
-            {this.renderItems()}
-            </tbody>
+		<tbody>
+		    {this.renderItems()}
+		</tbody>
 	    </table>
         );
     }

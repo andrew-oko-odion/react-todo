@@ -20,11 +20,11 @@ export default class TodosListItem extends React.Component {
         if (this.state.isEditing) {
             return (
                 <td>
-                <form onSubmit={this.onSaveClick.bind(this)}>
-		<div className="ui big input"> 
-                    <input type="text" defaultValue={task} ref="editInput"  />
-		</div> 
-                </form>
+                    <form onSubmit={this.onSaveClick.bind(this)}>
+			<div className="ui big input"> 
+			    <input type="text" defaultValue={task} ref="editInput"  />
+			</div> 
+                    </form>
                 </td>
             );
         }
@@ -43,24 +43,24 @@ export default class TodosListItem extends React.Component {
             return (
 		<div> 
                     <td>
-                    <button onClick={this.onSaveClick.bind(this)} className="ui tiny basic primary button">save</button>
+			<button onClick={this.onSaveClick.bind(this)} className="ui tiny basic primary button">save</button>
 		    </td>
 		    <td>
-                    <button onClick={this.onCancelClick.bind(this)} className="ui tiny basic button" >Cancel</button>
+			<button onClick={this.onCancelClick.bind(this)} className="ui tiny basic button" >Cancel</button>
                     </td>
-		    </div>
+		</div>
             );
         }
 
         return (
 	    <div>
-            <td>
-		<button onClick={this.onEditClick.bind(this)}  className="ui tiny violet button">Edit</button>
+		<td>
+		    <button onClick={this.onEditClick.bind(this)}  className="ui tiny violet button">Edit</button>
 		</td>
 		<td>
-            <button onClick={this.props.deleteTask.bind(this, this.props.task)}  className="ui basic tiny button"><i className="red trash icon"></i></button>
+		    <button onClick={this.props.deleteTask.bind(this, this.props.task)}  className="ui basic tiny button"><i className="red trash icon"></i></button>
 		</td>
-		</div>
+	    </div>
         );
     }
 

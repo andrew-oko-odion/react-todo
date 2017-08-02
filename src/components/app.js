@@ -1,4 +1,3 @@
-
 import React from 'react';
 import CreateTodo from './create-todo';
 import TodosList from './todos-list';
@@ -18,27 +17,24 @@ const todos = [
     }
 ];
 
-export default class App extends React.Component {
+class App extends React.Component {
     constructor(props) {
         super(props);
-
-        this.state = {
-            todos
-        };
+        this.state = { todos };
     }
 
     render() {
         return (
-		<div>
+	    <div>
                 <h3 className="ui teal header">New</h3>
                 <CreateTodo todos={this.state.todos} createTask={this.createTask.bind(this)} />
                 <TodosList
-            todos={this.state.todos}
-            toggleTask={this.toggleTask.bind(this)}
-            saveTask={this.saveTask.bind(this)}
-            deleteTask={this.deleteTask.bind(this)}
+		    todos={this.state.todos}
+		    toggleTask={this.toggleTask.bind(this)}
+		    saveTask={this.saveTask.bind(this)}
+		    deleteTask={this.deleteTask.bind(this)}
                 />
-		</div>
+	    </div>
         );
     }
 
@@ -67,3 +63,6 @@ export default class App extends React.Component {
         this.setState({ todos: this.state.todos });
     }
 }
+
+export default App;
+
