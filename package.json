@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
     "scripts": {
-	"start": "webpack-dev-server"
+	"start": "./node_modules/webpack-dev-server/webpack-dev-server.js"
     },
   "keywords": [],
   "author": "Michael Cheng <cheng.c.mike@gmail.com> (http://michaelcheng.io)",
