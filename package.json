@@ -3,9 +3,9 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-    "scripts": {
-	"start": "node ./server.js"
-    },
+  "scripts": {
+    "start": "node ./server.js"
+  },
   "keywords": [],
   "author": "Michael Cheng <cheng.c.mike@gmail.com> (http://michaelcheng.io)",
   "license": "ISC",
@@ -13,7 +13,9 @@
     "express": "^4.13.4",
     "lodash": "^4.2.1",
     "react": "^0.14.7",
-    "react-dom": "^0.14.7"
+    "react-dom": "^0.14.7",
+    "semantic-ui-css": "^2.2.11",
+    "semantic-ui-react": "^0.71.3"
   },
   "devDependencies": {
     "babel-core": "^6.4.5",
