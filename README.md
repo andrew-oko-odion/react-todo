@@ -10,8 +10,8 @@
 ![screenshot](http://i.imgur.com/PJAy5fL.png)
 
 ## Usage
-a. clone the repository 
-	` git clone https://github.com/andrew-oko-odion/react-todo.git `
+a. clone the repository  ` git clone https://github.com/andrew-oko-odion/react-todo.git `
+
 b. change directory to react-todo
    cd react-todo
 
