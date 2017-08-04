@@ -3,27 +3,24 @@
 
 ## Live App Demo
 
-<a href="http://react-todo.herokuapp.com/" target="_blank">http://react-todos.herokuapp.com/</a>
+<a href="http://reactive-todo.herokuapp.com/" target="_blank">React-todo</a>
 
 ![screenshot](http://i.imgur.com/XhFWA8w.png)
 ![screenshot](http://i.imgur.com/lxy3Nyc.png)
 ![screenshot](http://i.imgur.com/PJAy5fL.png)
 
 ## Usage
-a. `git clone the repo.
-
+a. clone the repository 
+	` git clone https://github.com/andrew-oko-odion/react-todo.git `
 b. change directory to react-todo
-   `cd react-todo`
+   cd react-todo
 
-c. Type `npm install` on your terminal 
+c. Type `yarn` on your terminal.
 
-d. start the webpack dev server by typing `webpack-dev-server` in the root 
-   of the project.
+d. start application by running `yarn start` 
    
-e. Navigate your Browser to `localhost:8080`
-   Remember the app Uses a CDN, So it needs internet to render its style.
-   Ensure You have internet Connection.
+e. Point your Browser to `localhost:3000`
 
 ## Contribute 
- To contribute to this project. make changes and commit and raise a pull request. 
+ To contribute to this project. make changes, commit and raise a pull request. 
 
