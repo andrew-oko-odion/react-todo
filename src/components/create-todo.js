@@ -1,5 +1,5 @@
 import React from 'react';
-import '../semantic/dist/semantic.min.css';
+
 
 class TodosList extends React.Component {
     constructor(props) {

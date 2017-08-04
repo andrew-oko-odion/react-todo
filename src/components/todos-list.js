@@ -1,7 +1,7 @@
 import _ from 'lodash';
 import React from 'react';
 import TodosListItem from './todos-list-item';
-import '../semantic/dist/semantic.min.css';
+
 
 export default class TodosList extends React.Component {
     renderItems() {

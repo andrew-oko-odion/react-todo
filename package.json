@@ -4,12 +4,14 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "build": "cross-env NODE_ENV=production webpack --config ./webpack.config.js --progress --colors",
     "start": "node ./server.js"
   },
   "keywords": [],
   "author": "Michael Cheng <cheng.c.mike@gmail.com> (http://michaelcheng.io)",
   "license": "ISC",
   "dependencies": {
+    "cross-env": "^5.0.3",
     "express": "^4.13.4",
     "lodash": "^4.2.1",
     "react": "^0.14.7",

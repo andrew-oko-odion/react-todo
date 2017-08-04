@@ -1,7 +1,7 @@
 import React from 'react';
 import CreateTodo from './create-todo';
 import TodosList from './todos-list';
-import '../semantic/dist/semantic.min.css';
+
 
 const todos = [
     {
