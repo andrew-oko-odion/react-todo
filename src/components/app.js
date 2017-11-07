@@ -1,7 +1,7 @@
 import React from 'react';
 import CreateTodo from './create-todo';
 import TodosList from './todos-list';
-
+import Toast from 'modern-toast';
 
 const todos = [
     {
@@ -28,6 +28,7 @@ class App extends React.Component {
         return (
 	    <div>
                 <h3 className="ui teal header">New</h3>
+		Toast.success('saved!!');
                 <CreateTodo todos={this.state.todos} createTask={this.createTask.bind(this)} />
                 <TodosList
 		    todos={this.state.todos}

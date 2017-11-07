@@ -1,17 +1,15 @@
 import React from 'react';
-
+import Toastr from './toastr';
 
 class TodosList extends React.Component {
     constructor(props) {
         super(props);
         this.state = { error: null };
     }
-    
     renderError() {
         if (!this.state.error) { return null; }
         return <div style={ { color: 'red' } }> {this.state.error}</div>;
     }
-
     render() {
         return (
 	    <form onSubmit={this.handleCreate.bind(this)}>
@@ -25,7 +23,6 @@ class TodosList extends React.Component {
 	    
         );
     }
-
     handleCreate(event) {
         event.preventDefault();
         const createInput = this.refs.createInput;
@@ -40,7 +37,6 @@ class TodosList extends React.Component {
         this.props.createTask(task);
         this.refs.createInput.value = '';
     }
-
     validateInput(task) {
         if (!task) {
             return 'Please enter a task.';
@@ -51,5 +47,4 @@ class TodosList extends React.Component {
         }
     }
 }
-
 export default  TodosList; 
